@@ -1,14 +1,11 @@
 import {
   Card,
-  CardAction,
-  CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import CardService from "./CardService";
-import { Button } from "../ui/button";
+
 import { Cardtype } from "@/utils/type";
 import Image from "next/image";
 

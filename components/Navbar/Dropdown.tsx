@@ -4,11 +4,11 @@ import {
   MenubarItem,
   MenubarMenu,
   MenubarSeparator,
-  MenubarShortcut,
+
   MenubarTrigger,
 } from "@/components/ui/menubar";
 
-import { AlignJustify, AlignRight } from "lucide-react";
+import {  AlignRight } from "lucide-react";
 
 import { List } from "@/utils/menulist";
 import Link from "next/link";
