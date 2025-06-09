@@ -51,7 +51,7 @@ const page = () => {
       </div>
 
       <div className="  justify-items-center ">
-        <div className="grid grid-cols-2 gap-4 justify-items-center">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-items-center">
           <ContactIconLine sizeicon="40"/>
           <ContactIconLine sizeicon="40"/>
           <ContactIconLine sizeicon="40"/>
