@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import "@/lib/fontawesome";
 import "./globals.css";
 import Headeravbar from "@/components/Navbar/Headeravbar";
+import { Kanit } from "next/font/google";
 
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const kanit = Kanit({
+  subsets: ["latin", "thai"],     // หรือ ["latin", "thai"] ถ้าใช้ภาษาอังกฤษด้วย
+  weight: ["200", "400", "700"], 
+  
 });
 
 export const metadata: Metadata = {
@@ -25,14 +20,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
-    <html lang="en">
-      <body
-       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-       >
+    <html lang="th" className={kanit.className}>
+      <body>
         <Headeravbar />
         {children}
       </body>
     </html>
+    
   );
+
 }
+ 

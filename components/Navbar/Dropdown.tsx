@@ -18,7 +18,7 @@ const Dropdown = () => {
     <div>
       <Menubar>
         <MenubarMenu>
-          <MenubarTrigger >
+          <MenubarTrigger  aria-label="Open menu">
             <AlignRight  />
           </MenubarTrigger>
           <MenubarContent className="bg-white">

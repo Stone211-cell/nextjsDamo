@@ -1,4 +1,4 @@
-import { ContactIconLine } from "../Contacted/ContactIcon";
+import { ContactIconFacebook, ContactIconLine, ContactIconMessenger, ContactIconPhone } from "../Contacted/ContactIcon";
 import Dropdown from "./Dropdown";
 
 const Headeravbar = () => {
@@ -8,13 +8,16 @@ const Headeravbar = () => {
 
       <div className="flex  gap-4 items-center max-w-full">
         <span>
-          <ContactIconLine pops="hidden" sizeicon="30" />
+          <ContactIconLine pops="hidden" sizeicon="2x" coloricon="green"/>
         </span>
         <span>
-          <ContactIconLine pops="hidden" sizeicon="10" />
+          <ContactIconPhone pops="hidden" sizeicon="2x" coloricon="red" />
         </span>
         <span>
-          <ContactIconLine pops="hidden" sizeicon="10" />
+          <ContactIconFacebook pops="hidden" sizeicon="2x" coloricon="blue" />
+        </span>
+        <span>
+          <ContactIconMessenger pops="hidden" sizeicon="2x" coloricon="blue" />
         </span>
 
         <div>

@@ -9,22 +9,25 @@ import CardService from "./CardService";
 import { Cardtype } from "@/utils/type";
 import Image from "next/image";
 
-const CardContainer = ({ srcimg, alt, title, Description }: Cardtype) => {
+const CardContainer = ({ srcimg, alt, title }: Cardtype) => {
   return (
-    <Card className="border-none ">
+    <Card className="border-0.5 ">
       <CardHeader>
         <CardTitle className="flex justify-center">
-          <Image
-            src={srcimg}
-            alt={alt}
-            className="rounded-full w-30 h-30"
-            width={30}
-            height={30}
-          />
+
+          <div className="w-[100px] h-[100px] overflow-hidden rounded-full">
+            <Image
+              src={srcimg}
+              alt={alt}
+              width={100}
+              height={100}
+              className="object-cover"
+            />
+          </div>
         </CardTitle>
 
         <CardDescription className="text-center text-red-900 text-md">
-          {Description}
+          บริการของเรา
         </CardDescription>
         <CardService text={title} />
       </CardHeader>
