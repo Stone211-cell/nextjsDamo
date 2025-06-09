@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-html, body {
+/* html, body {
   overflow-x: hidden;
-}
+} */
 
 :root {
   --radius: 0.65rem;
