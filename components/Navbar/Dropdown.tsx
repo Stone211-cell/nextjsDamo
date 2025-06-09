@@ -21,7 +21,7 @@ const Dropdown = () => {
           <MenubarTrigger >
             <AlignRight  />
           </MenubarTrigger>
-          <MenubarContent >
+          <MenubarContent className="bg-white">
             {List.map((item) => (
               <MenubarItem key={item.label} asChild>
                 <Link href={item.href}>{item.label}</Link>
