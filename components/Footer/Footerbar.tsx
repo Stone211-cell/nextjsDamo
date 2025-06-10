@@ -48,8 +48,8 @@ const Footerbar = () => {
               />
             </span>
             <div>
-              <h2 className="text-md font-bold md:text-xl text-amber-300">ช่างประปา คุณภาพ</h2>
-              <p className="mt-2 text-sm">
+              <h2 className="text-sm font-bold md:text-xl text-amber-300">ช่างประปา คุณภาพ</h2>
+              <p className="mt-2 text-xs">
                 รับซ่อมประปา หาจุดรั่ว เดินท่อประปา รับซ่อมท่อตันติดตั้งเก็บน้ำ
                 ทุกประเภท ครบจบในที่เดียว
               </p>

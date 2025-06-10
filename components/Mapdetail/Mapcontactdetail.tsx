@@ -30,28 +30,36 @@ const Mapcontactdetail = () => {
 
           <div className="flex justify-center text-center ">
             <h2 className="text-md font-bold mt-5  text-black bg-yellow-500 rounded-2xl p-2 transition-transform duration-200 ease-in-out hover:scale-110 ">
-              <Link href="https://maps.app.goo.gl/bu6t2kMvaarxJroE9">
+              <Link
+                href="https://maps.app.goo.gl/bu6t2kMvaarxJroE9"
+                className="text-white"
+              >
                 เปิดแผนที่นำทาง
               </Link>
             </h2>
           </div>
 
-          <div id="map" className="flex justify-center my-5">
-            <span>
-              <ContactIcon
-                sizeicon="2x"
-                coloricon="yellow"
-                msg="ที่ตั้ง"
-                description="48/23 ซอย หินอ่อน 3 แขวงสายไหม เขตสายไหม กรุงเทพมหานคร 10220 ประเทศไทย"
-                LINKBTN="https://maps.app.goo.gl/Xb2CXB2nrFop37ee7"
-                icontype={faLocationDot}
-                classtype=""
+          <div id="map" className=" my-5 text-center flex flex-col justify-items-center">
+            <div  className=" flex flex-col items-center justify-items-center justify-self-center">
+
+            <ContactIcon
+              sizeicon="2x"
+              coloricon="yellow"
+              msg="ที่ตั้ง"
+              LINKBTN="https://maps.app.goo.gl/Xb2CXB2nrFop37ee7"
+              icontype={faLocationDot}
+              classtype=""
               />
-            </span>
+              </div>
+
+            <p>
+              48/23 ซอย หินอ่อน 3 แขวงสายไหม เขตสายไหม กรุงเทพมหานคร 10220
+              ประเทศไทย
+            </p>
           </div>
 
           <div className="flex justify-center text-center ">
-            <div className="flex justify-center gap-10">
+            <div className="flex justify-center gap-10 md:flex-1/2">
               <span>
                 <ContactIcon
                   sizeicon="2x"

@@ -15,7 +15,7 @@ const ContactedBox = ({ classtype, }: classtype) => {
     <div>
       {" "}
       <div className="  justify-items-center ">
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-2 justify-items-center ">
+        <div className="grid grid-cols-2 mx-5 gap-5 md:grid-cols-2 justify-items-center ">
           <span>
             <ContactIcon
               sizeicon="2x"
@@ -38,11 +38,11 @@ const ContactedBox = ({ classtype, }: classtype) => {
               classtype={classtype}
             />
           </span>
-          <span className="pr-10">
+          <span className="pr-10 ">
             <ContactIcon
               sizeicon="2x"
               coloricon="red"
-              msg="Contact Us"
+              msg="โทรสอบถาม"
               description="064-408-8510"
               LINKBTN="tel:0644088510"
               icontype={faPhone}
@@ -53,7 +53,7 @@ const ContactedBox = ({ classtype, }: classtype) => {
             <ContactIcon
               sizeicon="2x"
               coloricon="green"
-              msg="Contact Us"
+              msg="LINE ID"
               description="064-408-8510"
               LINKBTN="tel:0644088510"
               icontype={faLine}

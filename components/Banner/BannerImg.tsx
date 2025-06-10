@@ -18,9 +18,9 @@ const BannerImg = () => {
         <img
           src="/images/banner/S__8683544.webp"
           alt="พื้นหลัง"
-          className="absolute inset-0 w-full h-[400px] object-cover  backdrop-blur-md"
+          className="absolute inset-0 w-full h-[100%] min-h-[400px] object-cover  backdrop-blur-md"
         />
-        <div className="relative z-10 bg-blue-900/50 p-8 h-[400px] rounded-xl text-white backdrop-blur-sm text-center">
+        <div className="relative z-10 bg-blue-900/50 p-8 h-[100%] min-h-[400px] rounded-xl text-white backdrop-blur-sm text-center">
           <h2 className="text-2xl font-bold"> ช่างมิล ประปาเพื่อคุณ</h2>
 
           <div className="my-5 ">
