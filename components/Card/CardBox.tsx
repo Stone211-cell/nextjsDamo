@@ -13,13 +13,13 @@ const CardBox = () => {
         />
         <CardContainer
           srcimg={LINKIMG + "/ติดตั้งชักโชรกไหม่.webp"}
-          alt="รับติดตั้งชักโชรกไหม่"
-          title="รับติดตั้งชักโชรกไหม่"
+          alt="รับติดตั้งสุขภัณฑ์"
+          title="รับติดตั้งสุขภัณฑ์"
         />
         <CardContainer
           srcimg={LINKIMG + "/LINE_เปลื่ยนท่อน้ำทิ้ง4นิ้ว_ลาดพร้าว.webp"}
-          alt="รับซ่อมท่อตัน"
-          title="รับซ่อมท่อตัน"
+          alt="รับเดินท่อ PPR PB"
+          title="รับเดินท่อ PPR PB"
         />
         <CardContainer
           srcimg={LINKIMG + "/รับซ่อมรั่วซึม.webp"}
@@ -32,7 +32,7 @@ const CardBox = () => {
           title="รับติดตั้งชักโชรกใหม่"
         />
         <CardContainer
-          srcimg={LINKIMG + "/LINE_ติดตั้งแทงค์น้ำ.jpg"}
+          srcimg={LINKIMG + "/LINE_ติดตั้งแทงค์น้ำ.webp"}
           alt="รับติดตั้งแทงค์น้ำ"
           title="รับติดตั้งแทงค์น้ำ"
         />

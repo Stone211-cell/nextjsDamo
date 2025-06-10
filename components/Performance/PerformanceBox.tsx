@@ -9,7 +9,7 @@ const PerformanceBox = ({
   mainmsg?: string;
   pops?: string;
 }) => {
-  const LINKIMG = "/images/service";
+  const LINKIMG = "/images/performance";
   return (
     <div>
       {" "}
@@ -26,33 +26,33 @@ const PerformanceBox = ({
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-6 px-10">
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ติดตั้งปั้มน้ำ.webp"}
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_1.jpg"}
             name="รับติดตั้งปั้มน้ำ"
             description="รับติดตั้งปั้มน้ำรับติดตั้งปั้มน้ำรับติดตั้งปั้มน้ำรับติดตั้งปั้มน้ำ"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/ติดตั้งชักโชรกไหม่.webp"}
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_2.jpg"}
             name="รับติดตั้งชักโชรกไหม่"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/LINE_เปลื่ยนท่อน้ำทิ้ง4นิ้ว_ลาดพร้าว.webp"}
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_3.jpg"}
             name="รับซ่อมท่อตัน"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/รับซ่อมรั่วซึม.webp"}
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_4.jpg"}
             name="รับซ่อมรั่วซึม"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/ติดตั้งชักโชรกไหม่.webp"}
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_5.jpg"}
             name="รับติดตั้งชักโชรกใหม่"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ติดตั้งแทงค์น้ำ.jpg"}
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_6.jpg"}
             name="รับติดตั้งแทงค์น้ำ"
           />
         </div>

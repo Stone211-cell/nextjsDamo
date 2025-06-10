@@ -63,7 +63,7 @@ const Footerbar = () => {
 
           <div className="flex flex-col gap-y-3 mt-3">
             <Image
-              src="/images/banner/768pxbanner.webp"
+              src="/images/service/QRCODE.jpg"
               alt="hello"
               width={100}
               height={100}
