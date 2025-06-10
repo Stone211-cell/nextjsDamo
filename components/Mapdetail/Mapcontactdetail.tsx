@@ -41,9 +41,9 @@ const Mapcontactdetail = () => {
               <ContactIcon
                 sizeicon="2x"
                 coloricon="yellow"
-                msg="Contact Us"
-                description="064-408-8510"
-                LINKBTN="tel:0644088510"
+                msg="ที่ตั้ง"
+                description="48/23 ซอย หินอ่อน 3 แขวงสายไหม เขตสายไหม กรุงเทพมหานคร 10220 ประเทศไทย"
+                LINKBTN="https://maps.app.goo.gl/Xb2CXB2nrFop37ee7"
                 icontype={faLocationDot}
                 classtype=""
               />
@@ -56,7 +56,7 @@ const Mapcontactdetail = () => {
                 <ContactIcon
                   sizeicon="2x"
                   coloricon="yellow"
-                  msg="Contact Us"
+                  msg="โทรศัพท์"
                   description="064-408-8510"
                   LINKBTN="tel:0644088510"
                   icontype={faPhone}
@@ -67,8 +67,8 @@ const Mapcontactdetail = () => {
                 <ContactIcon
                   sizeicon="2x"
                   coloricon="yellow"
-                  msg="Contact Us"
-                  description="064-408-8510"
+                  msg="LINE ID"
+                  description="0644088510"
                   LINKBTN="tel:0644088510"
                   icontype={faLine}
                   classtype=""

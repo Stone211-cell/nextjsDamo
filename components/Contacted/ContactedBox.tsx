@@ -15,7 +15,7 @@ const ContactedBox = ({ classtype, }: classtype) => {
     <div>
       {" "}
       <div className="  justify-items-center ">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 justify-items-center ">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-2 justify-items-center ">
           <span>
             <ContactIcon
               sizeicon="2x"

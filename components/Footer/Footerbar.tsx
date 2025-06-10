@@ -5,13 +5,12 @@ import { ContactIcon } from "../Contacted/ContactIcon";
 
 import { faLine } from "@fortawesome/free-brands-svg-icons";
 
-
 const Footerbar = () => {
   return (
-    <footer className="bg-gradient-to-b from-blue-900 to-blue-700  w-full p-8 h-[550px]  text-white  ">
+    <footer className="bg-gradient-to-b from-blue-900 to-blue-500  w-full p-8 h-[100%]  text-white  ">
       <div>
         <div>
-          <h2 className="text-3xl font-bold"> ช่างมิล ประปาเพื่อคุณ</h2>
+          <h2 className="text-3xl font-bold text-amber-300"> ช่างมิล ประปาเพื่อคุณ</h2>
 
           <div className="my-5 ">
             <h2 className="text-2xl font-bold">ช่างประปา คุณภาพ</h2>
@@ -25,7 +24,7 @@ const Footerbar = () => {
 
       <div className="grid grid-cols-2 text-md">
         <div>
-          <h2 className="my-5 mx-5">แผนผังเว็บไซต์</h2>
+          <h2 className="mb-3 mx-5">แผนผังเว็บไซต์</h2>
 
           <div className="flex flex-col gap-y-3 mx-8">
             <span>
@@ -48,6 +47,13 @@ const Footerbar = () => {
                 classtype=""
               />
             </span>
+            <div>
+              <h2 className="text-md font-bold md:text-xl text-amber-300">ช่างประปา คุณภาพ</h2>
+              <p className="mt-2 text-sm">
+                รับซ่อมประปา หาจุดรั่ว เดินท่อประปา รับซ่อมท่อตันติดตั้งเก็บน้ำ
+                ทุกประเภท ครบจบในที่เดียว
+              </p>
+            </div>
           </div>
         </div>
 
@@ -69,14 +75,7 @@ const Footerbar = () => {
               icontype={faLine}
               classtype=""
             />
-            <h2 className="text-xl font-bold">ช่างประปา คุณภาพ</h2>
-            <p className="mt-2 text-sm">
-              รับซ่อมประปา หาจุดรั่ว เดินท่อประปา รับซ่อมท่อตันติดตั้งเก็บน้ำ
-              ทุกประเภท ครบจบในที่เดียว{" "}
-            </p>
           </div>
-
-        
         </div>
       </div>
     </footer>
