@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { Button } from "../ui/button";
+
 import PerformanceContainer from "./PerformanceContainer";
 
 const Atmosphere = ({mainmsg}:{mainmsg?:string}) => {

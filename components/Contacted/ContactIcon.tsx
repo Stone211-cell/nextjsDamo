@@ -1,11 +1,10 @@
 import Link from "next/link";
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faFacebook,
-  faFacebookMessenger,
-  faLine,
+
 } from "@fortawesome/free-brands-svg-icons";
 
 type classtype = {
