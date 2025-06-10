@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import "@/lib/fontawesome";
 import "./globals.css";
 import Headeravbar from "@/components/Navbar/Headeravbar";

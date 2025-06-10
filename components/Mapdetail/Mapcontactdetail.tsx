@@ -2,15 +2,17 @@ import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { ContactIcon } from "../Contacted/ContactIcon";
 import { faLine } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import Image from "next/image";
 
 const Mapcontactdetail = () => {
   return (
     <div>
       <div className="relative bg-gradient-to-b from-blue-200 to-blue-800">
-        <img
+        <Image
           src="/images/banner/S__8683544.webp"
           alt="พื้นหลัง"
           className="absolute inset-0 w-full h-[100%] min-h-[500px] object-cover  backdrop-blur-md"
+          fill
         />
 
         <div className="relative z-10 bg-blue-900/50 p-8 h-[100%] min-h-[500px] rounded-xl text-white backdrop-blur-sm  text-center  flex flex-col justify-center">
