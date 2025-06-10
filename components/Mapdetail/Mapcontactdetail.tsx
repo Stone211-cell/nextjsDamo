@@ -10,10 +10,10 @@ const Mapcontactdetail = () => {
         <img
           src="/images/banner/S__8683544.webp"
           alt="พื้นหลัง"
-          className="absolute inset-0 w-full h-[500px] object-cover  backdrop-blur-md"
+          className="absolute inset-0 w-full h-[100%] min-h-[500px] object-cover  backdrop-blur-md"
         />
 
-        <div className="relative z-10 bg-blue-900/50 p-8 h-[500px] rounded-xl text-white backdrop-blur-sm  text-center  flex flex-col justify-center">
+        <div className="relative z-10 bg-blue-900/50 p-8 h-[100%] min-h-[500px] rounded-xl text-white backdrop-blur-sm  text-center  flex flex-col justify-center">
           <div className="flex justify-center ">
             <h2 className="text-2xl font-bold  bg-white text-black w-50 rounded-md transition-transform duration-200 ease-in-out hover:scale-110  ">
               <Link href="#map">ติดต่อเรา</Link>
@@ -59,7 +59,7 @@ const Mapcontactdetail = () => {
           </div>
 
           <div className="flex justify-center text-center ">
-            <div className="flex justify-center gap-10 md:flex-1/2">
+            <div className="grid grid-cols-1 md:grid-cols-2  gap-10 ">
               <span>
                 <ContactIcon
                   sizeicon="2x"

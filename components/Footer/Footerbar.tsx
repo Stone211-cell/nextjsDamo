@@ -47,7 +47,7 @@ const Footerbar = () => {
                 classtype=""
               />
             </span>
-            <div>
+            <div className="hidden md:block">
               <h2 className="text-sm font-bold md:text-xl text-amber-300">ช่างประปา คุณภาพ</h2>
               <p className="mt-2 text-xs">
                 รับซ่อมประปา หาจุดรั่ว เดินท่อประปา รับซ่อมท่อตันติดตั้งเก็บน้ำ

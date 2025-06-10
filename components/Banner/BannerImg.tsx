@@ -30,7 +30,7 @@ const BannerImg = () => {
 
           <div>
 
-            <ContactedBox  classtype="bg-white p-1 text-black rounded-xl"/>
+            <ContactedBox  classtype="bg-white p-1 w-full text-black rounded-xl"/>
           </div>
         </div>
       </div>

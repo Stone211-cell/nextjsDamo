@@ -9,37 +9,39 @@ import {
 
 type classtype = {
   classtype?: string;
+  pops?: string;
 };
-const ContactedBox = ({ classtype, }: classtype) => {
+const ContactedBox = ({ classtype, pops }: classtype) => {
   return (
     <div>
       {" "}
       <div className="  justify-items-center ">
-        <div className="grid grid-cols-2 mx-5 gap-5 md:grid-cols-2 justify-items-center ">
-          <span>
-            <ContactIcon
-              sizeicon="2x"
-              coloricon="blue"
-              msg="Messenger"
-              description="ช่างมิล วิศกรการประปา"
-              LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
-              icontype={faFacebookMessenger}
-              classtype={classtype}
-            />
-          </span>
-          <span>
-            <ContactIcon
-              sizeicon="2x"
-              coloricon="blue"
-              msg="Facebook"
-              description="ช่างมิล วิศกรการประปา"
-              LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
-              icontype={faFacebook}
-              classtype={classtype}
-            />
-          </span>
+        <div className="grid grid-cols-1 px-5 gap-5  md:grid-cols-2 justify-items-center  ">
+          <ContactIcon
+            pops={pops}
+            sizeicon="2x"
+            coloricon="blue"
+            msg="Messenger"
+            description="ช่างมิล วิศกรการประปา"
+            LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
+            icontype={faFacebookMessenger}
+            classtype={classtype}
+          />
+
+          <ContactIcon
+            pops={pops}
+            sizeicon="2x"
+            coloricon="blue"
+            msg="Facebook"
+            description="ช่างมิล วิศกรการประปา"
+            LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
+            icontype={faFacebook}
+            classtype={classtype}
+          />
+
           <span className="pr-10 ">
             <ContactIcon
+              pops={pops}
               sizeicon="2x"
               coloricon="red"
               msg="โทรสอบถาม"
@@ -51,6 +53,7 @@ const ContactedBox = ({ classtype, }: classtype) => {
           </span>
           <span className="pr-10">
             <ContactIcon
+              pops={pops}
               sizeicon="2x"
               coloricon="green"
               msg="LINE ID"

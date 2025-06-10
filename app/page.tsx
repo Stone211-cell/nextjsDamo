@@ -10,35 +10,32 @@ import DetailsInstallPump from "@/components/DetailsProduct/DetailsInstallPump";
 const page = () => {
   return (
     <div>
-      <div  className=" flex flex-col gap-12  justify-center">
+      <div className=" flex flex-col gap-12  justify-center">
+        {/* banner */}
+        <section>
+          <BannerImg />
+        </section>
+        {/* service */}
+        <section>
+          <DetailsProductBox />
+          <div id="service">
+            <CardBox />
+          </div>
+        </section>
+        {/* ปุ่มติดต่อ */}
+        <ContactedBox />
+        {/* ผลงาน */}
 
-      {/* banner */}
-      <section>
-        <BannerImg />
-      </section>
-      {/* service */}
-      <section>
-        <DetailsProductBox />
-        <div id="service">
-          <CardBox />
-        </div>
-      </section>
-      {/* ปุ่มติดต่อ */}
-      <ContactedBox />
-      {/* ผลงาน */}
+        <section>
+          <PerformanceBox mainmsg="ดูผลงานทั้งหมด" />
+        </section>
 
-      <section>
-
-        <PerformanceBox mainmsg="ดูผลงานทั้งหมด" />
-      </section>
-      
-      {/* แหล่งติดต่อ-กูเกิ้ลแมพ */}
-      <section>
-        {/* mapcontactdetail */}
-        <Mapcontactdetail />
-      </section>
+        {/* แหล่งติดต่อ-กูเกิ้ลแมพ */}
+        <section>
+          {/* mapcontactdetail */}
+          <Mapcontactdetail />
+        </section>
       </div>
-
 
       {/* install pump */}
       <section className="mb-10">
@@ -50,7 +47,6 @@ const page = () => {
         <h2 className="text-2xl text-center mb-3">ติดต่อเรา</h2>
         <ContactedBox />
       </section>
-      
     </div>
   );
 };
