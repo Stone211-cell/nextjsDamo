@@ -11,10 +11,10 @@ const kanit = Kanit({
   weight: ["200", "400", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "ช่างมิลการประปาเพื่อคุณ",
-  description: "",
-};
+// export const metadata: Metadata = {
+//   title: "ช่างมิลการประปาเพื่อคุณ",
+//   description: "",
+// };
 
 export default function RootLayout({
   children,
@@ -53,7 +53,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://yourwebsite.com" />
         <meta
           property="og:image"
-          content="https://yourwebsite.com/og-image.jpg"
+          content={LINKIMG}
         />
 
         {/* Twitter Card */}
