@@ -3,6 +3,7 @@ import "@/lib/fontawesome";
 import "./globals.css";
 import Headeravbar from "@/components/Navbar/Headeravbar";
 import { Kanit } from "next/font/google";
+import Footerbar from "@/components/Footer/Footerbar";
 
 const kanit = Kanit({
   subsets: ["latin", "thai"],     // หรือ ["latin", "thai"] ถ้าใช้ภาษาอังกฤษด้วย
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body>
         <Headeravbar />
         {children}
+        <Footerbar />
       </body>
     </html>
     

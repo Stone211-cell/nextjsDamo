@@ -15,11 +15,10 @@ import Link from "next/link";
 
 const Dropdown = () => {
   return (
-    <div>
-      <Menubar>
-        <MenubarMenu>
-          <MenubarTrigger  aria-label="Open menu">
-            <AlignRight  />
+      <Menubar className="bg-blue-500 transition-transform duration-200 ease-in-out hover:scale-110">
+        <MenubarMenu >
+          <MenubarTrigger  aria-label="Open menu" className="bg-blue-500 ">
+            <AlignRight  color="white" />
           </MenubarTrigger>
           <MenubarContent className="bg-white">
             {List.map((item) => (
@@ -31,7 +30,7 @@ const Dropdown = () => {
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
-    </div>
+   
   );
 };
 export default Dropdown;

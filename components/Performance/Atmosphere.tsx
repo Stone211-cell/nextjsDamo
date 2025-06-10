@@ -2,13 +2,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import PerformanceContainer from "./PerformanceContainer";
 
-const PerformanceBox = ({
-  mainmsg,
-  pops,
-}: {
-  mainmsg?: string;
-  pops?: string;
-}) => {
+const Atmosphere = ({mainmsg}:{mainmsg?:string}) => {
   const LINKIMG = "/images/service";
   return (
     <div>
@@ -16,13 +10,9 @@ const PerformanceBox = ({
       <section>
         <div>
           <h3 className="text-2xl text-center mb-2 border-b-red-800">
-            ผลงานของเรา
+            
+            {mainmsg}
           </h3>
-          <Button
-            className={`${pops} text-sm ml-15 bg-blue-800 text-white transition-transform duration-200 ease-in-out hover:scale-110 rounded-md`}
-          >
-            <Link href="/performance">{mainmsg}</Link>
-          </Button>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-6 px-10">
           <PerformanceContainer
@@ -60,4 +50,4 @@ const PerformanceBox = ({
     </div>
   );
 };
-export default PerformanceBox;
+export default Atmosphere;

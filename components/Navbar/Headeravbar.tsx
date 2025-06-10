@@ -1,23 +1,65 @@
-import { ContactIconFacebook, ContactIconLine, ContactIconMessenger, ContactIconPhone } from "../Contacted/ContactIcon";
+import {
+  ContactIcon,
+} from "../Contacted/ContactIcon";
 import Dropdown from "./Dropdown";
+
+
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faFacebookMessenger,
+  faLine,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Headeravbar = () => {
   return (
-    <div className="flex justify-between items-center p-4 w-full overflow-x-hidden">
+    <div className="flex justify-between items-center p-4 w-full overflow-x-hidden border-b-1 ">
       <div>Logo</div>
 
-      <div className="flex  gap-4 items-center max-w-full">
+      <div className="flex  gap-4 items-center max-w-full ">
         <span>
-          <ContactIconLine pops="hidden" sizeicon="2x" coloricon="green"/>
+          <ContactIcon
+            pops="hidden"
+            sizeicon="2x"
+            coloricon="blue"
+            msg="Messenger"
+            description="ช่างมิล วิศกรการประปา"
+            LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
+            icontype={faFacebookMessenger}
+          />
         </span>
         <span>
-          <ContactIconPhone pops="hidden" sizeicon="2x" coloricon="red" />
+          <ContactIcon
+            pops="hidden"
+            sizeicon="2x"
+            coloricon="blue"
+            msg="Facebook"
+            description="ช่างมิล วิศกรการประปา"
+            LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
+            icontype={faFacebook}
+          />
         </span>
         <span>
-          <ContactIconFacebook pops="hidden" sizeicon="2x" coloricon="blue" />
+          <ContactIcon
+            pops="hidden"
+            sizeicon="2x"
+            coloricon="red"
+            msg="Contact Us"
+            description="064-408-8510"
+            LINKBTN="tel:0644088510"
+            icontype={faPhone}
+          />
         </span>
         <span>
-          <ContactIconMessenger pops="hidden" sizeicon="2x" coloricon="blue" />
+          <ContactIcon
+            pops="hidden"
+            sizeicon="2x"
+            coloricon="green"
+            msg="Contact Us"
+            description="064-408-8510"
+            LINKBTN="tel:0644088510"
+            icontype={faLine}
+          />
         </span>
 
         <div>

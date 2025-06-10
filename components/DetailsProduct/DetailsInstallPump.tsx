@@ -1,0 +1,60 @@
+const DetailsInstallPump = () => {
+  return (
+    <div>
+      <div>
+        <div className="relative ">
+          <img
+            src="/images/banner/S__8683544.webp"
+            alt="พื้นหลัง"
+            className="absolute inset-0 w-full h-[500px] object-cover  backdrop-blur-md"
+          />
+          <div className="relative z-10 bg-blue-800/90 p-10  h-[500px] rounded-xl text-white backdrop-blur-md text-start">
+            <h2 className="text-3xl font-bold"> ช่างมิล ประปาเพื่อคุณ</h2>
+
+            <div >
+              <h2 className="text-xl font-bold text-yellow-400">
+                ซ่อมแซม ติดตั้ง ระบบประปา
+              </h2>
+              <p className="mt-2 text-sm">
+                บริการซ่อมแซม และ ติดตั้งระบบประปา สำหรับบ้านและอาคารทุกประเภท
+                มั่นใจได้ในคุณภาพงานที่รวดเร็วและประณีต พร้อมทีมช่างผู้ชำนาญการ
+                ยินดีแก้ปัญหาประปา แบบครบวงจร
+              </p>
+            </div>
+
+            <div className="my-5 ">
+              <h2 className="text-xl font-bold text-yellow-600">รับซ่อมประปา</h2>
+              <p className="mt-2 text-sm">
+                รับซ่อมแซมท่อประปา ทุกประเภท ไม่ว่าจะเป็น ท่อรั่ว ท่อแตกร้าว
+                น้ำไม่ไหล ให้กลับมาใช้งานได้ตามปกติ โดยเร็วที่สุด{" "}
+              </p>
+            </div>
+
+            <div className="my-5 ">
+              <h2 className="text-xl font-bold text-red-600">
+                รับซ่อมท่อตัน ส้วมตัน ท่อน้ำรั่วซึม
+              </h2>
+              <p className="mt-2 text-sm">
+                บริการรับแก้ไขปัญหาท่อตัน ส้วมตัน และ ท่อน้ำรั่วซึม
+                ให้บริการพร้อมอุปกรณ์ที่ทันสมัย และ ทีมงานที่มีประสบการณ์
+                ยินดีบริการที่เป็นกันเอง และ ใส่ใจในทุกรายละเอีย{" "}
+              </p>
+            </div>
+
+            <div className="my-5 ">
+              <h2 className="text-xl font-bold text-red-600">
+                รับเดินท่อประปา
+              </h2>
+              <p className="mt-2 text-sm">
+                ริการเดินท่อประปาใหม่ สำหรับบ้านและอาคารทุกขนาด
+                ด้วยการวางแผนงานอย่างรอบคอบ เพื่อให้ระบบประปามีคุณภาพสูง ทนทาน
+                และ ใช้งานได้อย่างยาวนาน{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default DetailsInstallPump;

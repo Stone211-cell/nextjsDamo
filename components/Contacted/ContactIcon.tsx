@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -12,111 +12,53 @@ type classtype = {
   pops?: string;
   sizeicon?: "xs" | "sm" | "lg" | "1x" | "2x" | "3x" | "5x" | "10x";
   coloricon?: string;
-};
-export const ContactIconLine = ({ pops, sizeicon, coloricon }: classtype) => {
-  return (
-    <div>
-      <div className="flex gap-2 justify-start items-center">
-        <Link href="tel:0644088510 " className="flex items-center ">
-          <FontAwesomeIcon icon={faLine} size={sizeicon} color={coloricon} />
-        </Link>
-        <div className={pops}>
-          <p>Contact Us</p>
-          <Link href="tel:0644088510 " className="text-green">
-            064-408-8510
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
+  LINKBTN?: string | undefined;
+  msg?: string;
+  description?: string;
+  icontype?: IconProp;
+  classtype?: string
 };
 
-export const ContactIconPhone = ({ pops, sizeicon, coloricon }: classtype) => {
+export const ContactIcon = ({
+  pops,
+  sizeicon,
+  coloricon,
+  icontype,
+  LINKBTN,
+  msg,
+  description,
+  classtype
+}: classtype) => {
+  const LinkDefault =
+    "https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr";
   return (
     <div>
-      <div className="flex gap-2 justify-start items-center">
+      <div  className={`flex gap-2 justify-start items-center transition-transform duration-200 ease-in-out hover:scale-110 ${classtype}`}>
         <Link
-          href="tel:0644088510"
+          href={LINKBTN ?? LinkDefault}
           className="flex items-center text-green"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faPhone} size={sizeicon} color={coloricon} />
+          <FontAwesomeIcon
+            icon={icontype ?? faFacebook}
+            size={sizeicon}
+            color={coloricon}
+          />
         </Link>
         <div className={pops}>
-          <p>Contact Us</p>
           <Link
-            href="tel:0644088510 "
-            className="text-green"
-            target="_blank"
+            href={LINKBTN ?? LinkDefault}
             rel="noopener noreferrer"
           >
-            064-408-8510
+           <p>{msg}</p>
           </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-export const ContactIconFacebook = ({
-  pops,
-  sizeicon,
-  coloricon,
-}: classtype) => {
-  const LINKFacebook =
-    "https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr";
-  return (
-    <div>
-      <div className="flex gap-2 justify-start items-center">
-        <Link
-          href={LINKFacebook}
-          className="flex items-center text-green"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faFacebook}
-            size={sizeicon}
-            color={coloricon}
-          />
-        </Link>
-        <div className={pops}>
-          <p>Facebook</p>
-          <Link href={LINKFacebook} target="_blank" rel="noopener noreferrer">
-            ช่างมิล วิศกรการประปา{" "}
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export const ContactIconMessenger = ({
-  pops,
-  sizeicon,
-  coloricon,
-}: classtype) => {
-  const LINKFacebook =
-    "https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr";
-  return (
-    <div>
-      <div className="flex gap-2 justify-start items-center">
-        <Link
-          href={LINKFacebook}
-          className="flex items-center text-green"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faFacebookMessenger}
-            size={sizeicon}
-            color={coloricon}
-          />
-        </Link>
-        <div className={pops}>
-          <p>Messenger</p>
-          <Link href={LINKFacebook} target="_blank" rel="noopener noreferrer">
-            ช่างมิล วิศกรการประปา{" "}
+          
+          <Link
+            href={LINKBTN ?? LinkDefault}
+            rel="noopener noreferrer"
+          >
+            {description}
           </Link>
         </div>
       </div>

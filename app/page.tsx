@@ -1,42 +1,56 @@
-import CardContainer from "@/components/Card/CardContainer";
 import BannerImg from "@/components/Banner/BannerImg";
-import { ContactIconLine } from "@/components/Contacted/ContactIcon";
-import PerformanceContainer from "@/components/Performance/PerformanceContainer";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+
 import PerformanceBox from "@/components/Performance/PerformanceBox";
 import ContactedBox from "@/components/Contacted/ContactedBox";
 import CardBox from "@/components/Card/CardBox";
 import DetailsProductBox from "@/components/DetailsProduct/DetailsProductBox";
+import Mapcontactdetail from "@/components/Mapdetail/Mapcontactdetail";
+import DetailsInstallPump from "@/components/DetailsProduct/DetailsInstallPump";
 
 const page = () => {
   return (
-    <div className=" flex flex-col gap-10  justify-center">
+    <div>
+      <div  className=" flex flex-col gap-12  justify-center">
+
       {/* banner */}
       <section>
         <BannerImg />
       </section>
-
-       {/* service */}
+      {/* service */}
       <section>
-       <DetailsProductBox />
-
+        <DetailsProductBox />
         <div id="service">
           <CardBox />
         </div>
       </section>
-
+      {/* ปุ่มติดต่อ */}
       <ContactedBox />
-
       {/* ผลงาน */}
+
       <section>
-        {" "}
-        <PerformanceBox />
+
+        <PerformanceBox mainmsg="ดูผลงานทั้งหมด" />
+      </section>
+      
+      {/* แหล่งติดต่อ-กูเกิ้ลแมพ */}
+      <section>
+        {/* mapcontactdetail */}
+        <Mapcontactdetail />
+      </section>
+      </div>
+
+
+      {/* install pump */}
+      <section className="mb-10">
+        <DetailsInstallPump />
       </section>
 
-      <div className="h-64 bg-gradient-to-b from-blue-200 to-blue-800">
-        faf
-      </div>
+      {/* ปุ่มติดต่อ */}
+      <section className="mb-10">
+        <h2 className="text-2xl text-center mb-3">ติดต่อเรา</h2>
+        <ContactedBox />
+      </section>
+      
     </div>
   );
 };

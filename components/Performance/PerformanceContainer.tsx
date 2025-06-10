@@ -10,7 +10,7 @@ const PerformanceContainer = ({
   description?: string;
 }) => {
   return (
-    <article className=" group relative">
+    <article className=" group relative border-1/4 bg-gray-700/4 p-2 rounded-3xl">
       <div className="relative h-[300px] rounded-md">
         <Image
           src={image}
@@ -22,7 +22,7 @@ const PerformanceContainer = ({
         />
       </div>
 
-      <div className="flex flex-col   mt-3">
+      <div className="flex flex-col h-[100px]   mt-3">
         <h3 className="text-lg text-blue-800 font-semibold ">{name}</h3>
         <p className="text-sm text-gray-500  ">{description}</p>
       </div>

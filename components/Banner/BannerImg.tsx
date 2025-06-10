@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ContactedBox from "../Contacted/ContactedBox";
+
 
 const BannerImg = () => {
   return (
@@ -21,13 +23,14 @@ const BannerImg = () => {
         <div className="relative z-10 bg-blue-900/50 p-8 h-[400px] rounded-xl text-white backdrop-blur-sm text-center">
           <h2 className="text-2xl font-bold"> ช่างมิล ประปาเพื่อคุณ</h2>
 
-          <div className="mt-5">
+          <div className="my-5 ">
             <h2 className="text-xl font-bold">ช่างประปา คุณภาพ</h2>
             <p className="mt-2 text-sm">รับซ่อมประปา หาจุดรั่ว เดินท่อประปา รับซ่อมท่อตันติดตั้งเก็บน้ำ ทุกประเภท ครบจบในที่เดียว </p>
           </div>
 
           <div>
 
+            <ContactedBox  classtype="bg-white p-1 text-black rounded-xl"/>
           </div>
         </div>
       </div>

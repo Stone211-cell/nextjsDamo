@@ -1,26 +1,65 @@
-import {
-  ContactIconFacebook,
-  ContactIconLine,
-  ContactIconMessenger,
-  ContactIconPhone,
-} from "./ContactIcon";
+import { ContactIcon } from "./ContactIcon";
 
-const ContactedBox = () => {
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faFacebookMessenger,
+  faLine,
+} from "@fortawesome/free-brands-svg-icons";
+
+type classtype = {
+  classtype?: string;
+};
+const ContactedBox = ({ classtype, }: classtype) => {
   return (
     <div>
       {" "}
       <div className="  justify-items-center ">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 justify-items-center ">
-          <span className="pr-10">
-            <ContactIconLine sizeicon="2x" coloricon="green" />
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 justify-items-center ">
+          <span>
+            <ContactIcon
+              sizeicon="2x"
+              coloricon="blue"
+              msg="Messenger"
+              description="ช่างมิล วิศกรการประปา"
+              LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
+              icontype={faFacebookMessenger}
+              classtype={classtype}
+            />
+          </span>
+          <span>
+            <ContactIcon
+              sizeicon="2x"
+              coloricon="blue"
+              msg="Facebook"
+              description="ช่างมิล วิศกรการประปา"
+              LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
+              icontype={faFacebook}
+              classtype={classtype}
+            />
           </span>
           <span className="pr-10">
-            <ContactIconPhone sizeicon="2x" coloricon="red" />
+            <ContactIcon
+              sizeicon="2x"
+              coloricon="red"
+              msg="Contact Us"
+              description="064-408-8510"
+              LINKBTN="tel:0644088510"
+              icontype={faPhone}
+              classtype={classtype}
+            />
           </span>
-
-          <ContactIconFacebook sizeicon="2x" coloricon="blue" />
-
-          <ContactIconMessenger sizeicon="2x" coloricon="blue" />
+          <span className="pr-10">
+            <ContactIcon
+              sizeicon="2x"
+              coloricon="green"
+              msg="Contact Us"
+              description="064-408-8510"
+              LINKBTN="tel:0644088510"
+              icontype={faLine}
+              classtype={classtype}
+            />
+          </span>
         </div>
       </div>
     </div>
