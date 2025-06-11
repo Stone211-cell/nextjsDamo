@@ -1,6 +1,6 @@
 import BannerImg from "@/components/Banner/BannerImg";
 
-import PerformanceBox from "@/components/Performance/PerformanceBox";
+import PerformanceShow from "@/components/Performance/PerformanceShow";
 import ContactedBox from "@/components/Contacted/ContactedBox";
 import CardBox from "@/components/Card/CardBox";
 import DetailsProductBox from "@/components/DetailsProduct/DetailsProductBox";
@@ -27,7 +27,7 @@ const page = () => {
         {/* ผลงาน */}
 
         <section>
-          <PerformanceBox mainmsg="ดูผลงานทั้งหมด" />
+          <PerformanceShow mainmsg="ดูผลงานทั้งหมด" />
         </section>
 
         {/* แหล่งติดต่อ-กูเกิ้ลแมพ */}

@@ -51,6 +51,18 @@ const ContactedBox = ({ classtype, pops }: classtype) => {
               classtype={classtype}
             />
           </span>
+          <span className="pr-10 ">
+            <ContactIcon
+              pops={pops}
+              sizeicon="2x"
+              coloricon="red"
+              msg="โทรสอบถาม"
+              description="096-979-2757"
+              LINKBTN="tel:0969792757"
+              icontype={faPhone}
+              classtype={classtype}
+            />
+          </span>
           <span className="pr-10">
             <ContactIcon
               pops={pops}

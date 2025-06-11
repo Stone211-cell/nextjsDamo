@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ช่างมิลการประปาเพื่อคุณ",
     description: "คำอธิบายสั้นๆ ของเว็บหรือเพจนี้",
-    url: "https://yourwebsite.com",
+    url: "https://xn--12cli4ea7apbo8ioaeft01a.com/ ",
     type: "website",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 
   other: {
     charset: "UTF-8",
-    canonical: "https://yourwebsite.com/current-page",
+    canonical: "https://xn--12cli4ea7apbo8ioaeft01a.com/",
   },
 };
 

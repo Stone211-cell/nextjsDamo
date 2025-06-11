@@ -41,18 +41,20 @@ const Mapcontactdetail = () => {
             </h2>
           </div>
 
-          <div id="map" className=" my-5 text-center flex flex-col justify-items-center">
-            <div  className=" flex flex-col items-center justify-items-center justify-self-center">
-
-            <ContactIcon
-              sizeicon="2x"
-              coloricon="yellow"
-              msg="ที่ตั้ง"
-              LINKBTN="https://maps.app.goo.gl/Xb2CXB2nrFop37ee7"
-              icontype={faLocationDot}
-              classtype=""
+          <div
+            id="map"
+            className=" my-5 text-center flex flex-col justify-items-center"
+          >
+            <div className=" flex flex-col items-center justify-items-center justify-self-center">
+              <ContactIcon
+                sizeicon="2x"
+                coloricon="yellow"
+                msg="ที่ตั้ง"
+                LINKBTN="https://maps.app.goo.gl/Xb2CXB2nrFop37ee7"
+                icontype={faLocationDot}
+                classtype=""
               />
-              </div>
+            </div>
 
             <p>
               48/23 ซอย หินอ่อน 3 แขวงสายไหม เขตสายไหม กรุงเทพมหานคร 10220
@@ -61,14 +63,25 @@ const Mapcontactdetail = () => {
           </div>
 
           <div className="flex justify-center text-center ">
-            <div className="grid grid-cols-1 md:grid-cols-2  gap-10 ">
+            <div className="grid grid-cols-1 md:grid-cols-3  gap-10 ">
               <span>
                 <ContactIcon
                   sizeicon="2x"
                   coloricon="yellow"
-                  msg="โทรศัพท์"
+                  msg="โทรศัพท์สอบถาม"
                   description="064-408-8510"
                   LINKBTN="tel:0644088510"
+                  icontype={faPhone}
+                  classtype=""
+                />
+              </span>
+              <span>
+                <ContactIcon
+                  sizeicon="2x"
+                  coloricon="yellow"
+                  msg="โทรศัพท์สอบถาม"
+                  description="096-979-2757"
+                  LINKBTN="tel:0969792757"
                   icontype={faPhone}
                   classtype=""
                 />

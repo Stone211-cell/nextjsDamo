@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import PerformanceContainer from "./PerformanceContainer";
 
-const PerformanceBox = ({
+const PerformanceShow = ({
   mainmsg,
   pops,
 }: {
@@ -60,4 +60,4 @@ const PerformanceBox = ({
     </div>
   );
 };
-export default PerformanceBox;
+export default PerformanceShow;
