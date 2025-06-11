@@ -14,7 +14,6 @@ const kanit = Kanit({
 
 
 
-const LINKIMG = "/images/service/LOGO.jpg";
 
 export const metadata: Metadata = {
   title: "ช่างมิลการประปาเพื่อคุณ",
@@ -61,7 +60,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const LINKIMG = "/images/service/LOGO.jpg";
+
   
   return (
     <html lang="th" className={kanit.className}>
