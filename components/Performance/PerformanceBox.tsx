@@ -33,7 +33,7 @@ const PerformanceBox = ({
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_2.jpg"}
-            name="รับติดตั้งชักโชรกไหม่"
+            name="ตรวจหาท่อรั่วซึม"
           />
 
           <PerformanceContainer
@@ -48,12 +48,18 @@ const PerformanceBox = ({
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_5.jpg"}
-            name="ติดตั้งท่อประปาใหม่"
+            name="รับซ่อม ใต้คานบ้าน"
+            description="หาจุดรั่ว และ ซ่อมท่อประปาภายในบ้าน"
           />
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_ติดตั้งแทงค์_250611_1.jpg"}
             name="รับติดตั้งแทงค์น้ำ"
+          />
+
+          <PerformanceContainer
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_7.jpg"}
+            name="เดินท่อใหม่ เปลี่ยนระบบจากใต้ดินย้ายมาบนดิน"
           />
         </div>
       </section>

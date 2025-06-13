@@ -33,7 +33,7 @@ const PerformanceShow = ({
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_2.jpg"}
-            name="รับติดตั้งชักโชรกไหม่"
+            name="ตรวจหาท่อรั่วซึม"
           />
 
           <PerformanceContainer
@@ -48,7 +48,8 @@ const PerformanceShow = ({
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_5.jpg"}
-            name="ติดตั้งท่อประปาใหม่"
+            name="รับซ่อม ใต้คานบ้าน"
+            description="หาจุดรั่ว และ ซ่อมท่อประปาภายในบ้าน"
           />
 
           <PerformanceContainer
