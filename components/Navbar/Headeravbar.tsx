@@ -14,7 +14,7 @@ import {
 const Headeravbar = () => {
   return (
     <div className="flex justify-between items-center p-4 w-full overflow-x-hidden border-b-1 ">
-      <div>Logo</div>
+      <div></div>
 
       <div className="flex  gap-4 items-center max-w-full ">
         <span>

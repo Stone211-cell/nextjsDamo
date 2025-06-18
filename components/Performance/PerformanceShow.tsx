@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import PerformanceContainer from "./PerformanceContainer";
 
-const PerformanceShow = ({
+const PerformanceBox = ({
   mainmsg,
   pops,
 }: {
@@ -26,34 +26,33 @@ const PerformanceShow = ({
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-6 px-10">
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_1.jpg"}
-            name="เดินท่อใหม่"
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_1.jpg"}
+            name="เปลี่ยนท่อ ติดตั้งซิงค์ล้างหน้า"
             // description="รับติดตั้งปั้มน้ำรับติดตั้งปั้มน้ำรับติดตั้งปั้มน้ำรับติดตั้งปั้มน้ำ"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_2.jpg"}
-            name="ตรวจหาท่อรั่วซึม"
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_2.jpg"}
+            name="เดินท่อใหม่ เปลี่ยนระบบจากใต้ดินย้ายมาบนดิน"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_3.jpg"}
-            name="รับซ่อมท่อรั่วซึม"
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_3.jpg"}
+            name="รับติดตั้งแทงค์น้ำ"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_4.jpg"}
-            name=" ติดตั้งท่อวาล์วน้ำประปาใหม่"
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_4.jpg"}
+            name="รับติดตั้งแทงค์น้ำ"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250610_5.jpg"}
-            name="รับซ่อม ใต้คานบ้าน"
-            description="หาจุดรั่ว และ ซ่อมท่อประปาภายในบ้าน"
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_5.jpg"}
+            name="ติดตั้งซิงค์ล้างหน้า"
           />
 
           <PerformanceContainer
-            image={LINKIMG + "/LINE_ALBUM_ติดตั้งแทงค์_250611_1.jpg"}
+            image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_6.jpg"}
             name="รับติดตั้งแทงค์น้ำ"
           />
         </div>
@@ -61,4 +60,4 @@ const PerformanceShow = ({
     </div>
   );
 };
-export default PerformanceShow;
+export default PerformanceBox;
