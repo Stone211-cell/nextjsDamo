@@ -10,7 +10,7 @@ const Mapcontactdetail = () => {
       <div className="relative bg-gradient-to-b from-blue-200 to-blue-800">
         <Image
           src="/images/banner/S__8683544.webp"
-          alt="พื้นหลัง"
+          alt="ซ่อมประปา"
           className="absolute inset-0 w-full h-[100%] min-h-[500px] object-cover  backdrop-blur-md"
           fill
         />

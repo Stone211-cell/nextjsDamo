@@ -38,22 +38,22 @@ const PerformanceBox = ({
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_3.jpg"}
-            name="รับติดตั้งแทงค์น้ำ"
+            name="รับช่อมปั้มน้ำดังปั้มน้ำทำงานตลอดเวลา"
           />
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_4.jpg"}
-            name="รับติดตั้งแทงค์น้ำ"
+            name=" รับติดตั้งปั้มน้ำตามที่ลูกค้าต้องการ"
           />
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_5.jpg"}
-            name="ติดตั้งซิงค์ล้างหน้า"
+            name="รับช่อมน้ำหยดน้ำรั่วน้ำชึม และติดตั้งสุขภัณฑ์ไหม่"
           />
 
           <PerformanceContainer
             image={LINKIMG + "/LINE_ALBUM_รูปตอนทำงาน_250618_6.jpg"}
-            name="รับติดตั้งแทงค์น้ำ"
+            name="รับเดินระบบท่อประปาไหม่ครบวงจร"
           />
         </div>
       </section>

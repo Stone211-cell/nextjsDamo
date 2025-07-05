@@ -8,7 +8,7 @@ const performance = () => {
        <PerformanceBox mainmsg="ดูผลงานทั้งหมด" pops="hidden" />
 
        <div>
-        <Atmosphere mainmsg="ภาพบรรยากาศ" />
+        <Atmosphere  />
        </div>
     </div>
   );

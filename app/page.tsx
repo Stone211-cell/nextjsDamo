@@ -6,6 +6,7 @@ import CardBox from "@/components/Card/CardBox";
 import DetailsProductBox from "@/components/DetailsProduct/DetailsProductBox";
 import Mapcontactdetail from "@/components/Mapdetail/Mapcontactdetail";
 import DetailsInstallPump from "@/components/DetailsProduct/DetailsInstallPump";
+import { Review } from "@/components/DetailsProduct/review";
 
 const page = () => {
   return (
@@ -18,14 +19,15 @@ const page = () => {
         {/* service */}
         <section>
           <DetailsProductBox />
+
           <div id="service">
             <CardBox />
           </div>
         </section>
         {/* ปุ่มติดต่อ */}
         <ContactedBox />
-        {/* ผลงาน */}
 
+        {/* โชว์ผลงาน */}
         <section>
           <PerformanceShow mainmsg="ดูผลงานทั้งหมด" />
         </section>
@@ -47,6 +49,7 @@ const page = () => {
         <h2 className="text-2xl text-center mb-3">ติดต่อเรา</h2>
         <ContactedBox />
       </section>
+      <Review />
     </div>
   );
 };
