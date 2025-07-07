@@ -1,4 +1,4 @@
-import { faHouse, faUsersRectangle } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faTruckFast, faUser, faUsersRectangle } from "@fortawesome/free-solid-svg-icons";
 
 import Image from "next/image";
 import { ContactIcon } from "../Contacted/ContactIcon";
@@ -34,6 +34,27 @@ const Footerbar = () => {
                 msg="หน้าหลัก"
                 LINKBTN="/"
                 icontype={faHouse}
+                classtype=""
+              />
+            </span>
+            <span>
+              <ContactIcon
+                sizeicon="lg"
+                coloricon="white"
+                msg="เกี่ยวกับเรา"
+                LINKBTN="/aboutus"
+                icontype={faUser}
+                classtype=""
+              />
+            </span>
+            <span>
+              <ContactIcon
+                sizeicon="lg"
+                coloricon="white"
+                msg="การบริการของเรา"
+                LINKBTN="/service"
+                icontype={faTruckFast}
+                
                 classtype=""
               />
             </span>

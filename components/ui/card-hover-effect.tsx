@@ -13,7 +13,7 @@ export const HoverEffect = ({
     pic: string;
     title: string;
     description?: string;
-    link: string;
+    link?: string;
   }[];
   className?: string;
 }) => {
@@ -28,7 +28,7 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <a
-          href={item?.link}
+          href="https://line.me/ti/p/cGh_RMYJky"
           key={item?.link}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -72,7 +72,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-gradient-to-b from-blue-900 to-blue-700  border border-transparent group-hover:border-blue-300 hov relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-gradient-to-b bg-blue-900  border border-transparent group-hover:border-blue-300 hov relative z-20",
         className
       )}
     >
@@ -92,14 +92,17 @@ export const CardPicture = ({
 
 }) => {
   return (
+   
+
     <Image
-      className={cn("tracking-wide mt-4", className)}
+      className={cn("tracking-wide mt-4 rounded-xl w-full h-full group-hover:scale-105 transition-transform duration-400", className)}
       src={src}
       alt="ซ่อมประปา" // ✅ ควรมี alt เสมอ
       width={500}
       height={300}
       priority // optional, preload image
-    />
+      />
+    
   );
 };
 export const CardTitle = ({
@@ -110,7 +113,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("font-bold tracking-wide mt-3 text-white", className)}>
+    <h4 className={cn("font-bold tracking-wide mt-3 text-white group-hover:scale-105 transition-transform duration-300", className)}>
       {children}
     </h4>
   );
